@@ -8,6 +8,7 @@ import {
 import Loader from "../components/Loader/Loader";
 
 const Home = lazy(() => import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
 const DashboardLayout = lazy(() => import("../layout/DashboardLayout"));
 const Dashboard = lazy(() => import("../pages/dashboard/Dashboard"));
 const CreateSellerProfile = lazy(() =>
@@ -16,7 +17,6 @@ const CreateSellerProfile = lazy(() =>
 const Marketplace = lazy(() => import("../pages/dashboard/Marketplace"));
 const Chat = lazy(() => import("../pages/dashboard/Chat"));
 const Transactions = lazy(() => import("../pages/dashboard/Transactions"));
-const Notifications = lazy(() => import("../pages/dashboard/Notifications"));
 const MarketplaceHome = lazy(() => import("../pages/MarketplaceHome"));
 const MarketplaceHomeDetails = lazy(() =>
   import("../pages/MarketplaceHomeDetails")
@@ -33,6 +33,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="/marketplace" element={<MarketplaceHome />} />
         <Route path="/marketplace/:id" element={<MarketplaceHomeDetails />} />
+        <Route path="/about" element={<About />} />
       </Route>
       <Route path="/dashboard" element={<DashboardLayout />}>
         <Route index element={<Dashboard />} />
@@ -41,7 +42,6 @@ const router = createBrowserRouter(
         <Route path="market_place/:id" element={<MarketplaceDetails />} />
         <Route path="chat" element={<Chat />} />
         <Route path="transactions" element={<Transactions />} />
-        <Route path="notifications" element={<Notifications />} />
       </Route>
     </Route>
   )

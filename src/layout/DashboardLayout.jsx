@@ -23,10 +23,10 @@ const DashboardLayout = () => {
   return (
     <div>
       <div className="flex bg-white">
-        <div className="w-[20%]">
+        <div className="w-[20%] hidden lg:flex md:flex">
           <Sidebar />
         </div>
-        <div className="px-6 w-[100%] lg:w-[77%] md:w-[77%] h-auto lg:h-[100vh] md:h-[80vh] overflow-y-scroll">
+        <div className="px-6 w-[100%] lg:w-[77%] md:w-[77%] h-auto lg:h-[100vh] md:h-[80vh] overflow-y-scroll mx-auto no-scrollbar">
           <MobileSidebar />
           <Outlet />
         </div>

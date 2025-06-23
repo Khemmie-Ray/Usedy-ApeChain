@@ -1,6 +1,5 @@
 import { createAppKit } from "@reown/appkit/react";
 import { EthersAdapter } from "@reown/appkit-adapter-ethers";
-import { baseSepolia } from "@reown/appkit/networks";
 import { curtis } from "@reown/appkit/networks";
 
 // 1. Get projectId

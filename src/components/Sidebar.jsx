@@ -65,13 +65,6 @@ const Sidebar = () => {
         <ImCart className="mr-4" /> Marketplace
       </NavLink>
       <NavLink
-        to="notifications"
-        className="text-[14px] text-white  flex items-center py-4 mb-4 px-6 "
-        style={({ isActive }) => (isActive ? activeStyle : null)}
-      >
-        <BsBell className="mr-4" /> Notifications
-      </NavLink>
-      <NavLink
         to="transactions"
         className="text-[14px] text-white  flex items-center py-4 mb-4 px-6 "
         style={({ isActive }) => (isActive ? activeStyle : null)}

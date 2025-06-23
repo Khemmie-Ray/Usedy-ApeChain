@@ -114,8 +114,8 @@ Together, we can build a greener, more eco-conscious world.
 
 ## 📄 Smart Contract Deployments
 
-- **Usedy Contract:** `0xcBb31e17708ED5c054579f35DF17b5BC60D4fBb0`
-- **UsedyToken Contract:** `0x2B793942fC423EC0Ee9c57E5D1d20B1E4047753D`
+- **Usedy Contract:** `0x25d3195984A693886103312eA3FA53D738c951B7`
+- **UsedyToken Contract:** `0x3D98a2f7dFdAB3c09A28e95f5e49f26be87f7f95`
 
 ---
 
@@ -127,6 +127,6 @@ Together, we can build a greener, more eco-conscious world.
 
 ## 🎤 Pitch Deck
 
-- Canva Pitch: [View Pitch](https://www.canva.com/design/DAGmZw9X4OM/_RnCa_ueGOYJRAU_Me7yIA/view?utm_content=DAGmZw9X4OM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=habd2afab68)
+- Canva Pitch: [View Pitch]()
 
 ---

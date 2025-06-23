@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { useAppKitAccount, useAppKitNetwork, useAppKitProvider } from "@reown/appkit/react";
 import { toast } from "react-toastify";
-import { baseSepolia } from "@reown/appkit/networks";
+import { curtis } from "@reown/appkit/networks";
 import { ErrorDecoder } from "ethers-decode-error";
 import abi from "../constants/abi.json";
 import { ethers, Contract, BrowserProvider } from "ethers";
@@ -43,8 +43,8 @@ const BuyProduct = ({ id, price }) => {
       return;
     }
 
-    if (Number(chainId) !== Number(baseSepolia.id)) {
-      toast.error("You're not connected to Base Sepolia");
+    if (Number(chainId) !== Number(curtis.id)) {
+      toast.error("You're not connected to Curtis");
       return;
     }
     const getProvider = (provider) => new ethers.BrowserProvider(provider);
@@ -80,7 +80,6 @@ const BuyProduct = ({ id, price }) => {
       toast.error(`Product purchase failed - ${decodedError.reason}`, {
         position: "top-center",
       });
-      console.log(decodedError.reason);
     } finally {
       setAmount(0);
       setOpen(false);

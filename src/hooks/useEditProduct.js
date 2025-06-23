@@ -6,14 +6,14 @@ import { curtis } from "@reown/appkit/networks";
 import { ErrorDecoder } from "ethers-decode-error";
 import abi from "../constants/abi.json";
 
-const useAddProduct = () => {
+const useEditProduct = () => {
   const contract = useContractInstance(true);
   const { address } = useAppKitAccount();
   const { chainId } = useAppKitNetwork();
   const errorDecoder = ErrorDecoder.create([abi]);
 
   return useCallback(
-    async (productName, imageUrl, productDesc, amount, productWeight) => {
+    async (id, productName, imageUrl, productDesc, amount, productWeight) => {
       if (!productName || !imageUrl || !productDesc || !amount || !productWeight) {
         toast.error("Invalid input!");
         return;
@@ -35,19 +35,19 @@ const useAddProduct = () => {
       }
 
       try {
-        const tx = await contract.listProduct(productName, imageUrl, productDesc, amount, productWeight);
+        const tx = await contract.updateProduct(id, productName, imageUrl, productDesc, amount, productWeight);
         const receipt = await tx.wait();
 
         if (receipt.status === 1) {
-          toast.success("Product Listing Successful");
+          toast.success("Product Edit Successful");
           return;
         }
 
-        toast.error("Failed to List product");
+        toast.error("Failed to edit product");
         return;
       } catch (err) {
         const decodedError = await errorDecoder.decode(err);
-        toast.error(`Failed to List Product - ${decodedError.reason}`, {
+        toast.error(`Failed to edit Product - ${decodedError.reason}`, {
           position: "top-center",
         });
       }
@@ -56,4 +56,4 @@ const useAddProduct = () => {
   );
 };
 
-export default useAddProduct;
+export default useEditProduct;

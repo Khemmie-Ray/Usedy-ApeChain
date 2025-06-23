@@ -50,7 +50,7 @@ const MarketplaceDetails = () => {
                 {transaction.name}
               </h3>
               <p className="font-titiliumweb mb-4 font-bold text-[#0C3B45] lg:text-[24px] md:text-[24px] text-[20px]">
-                {formatUnits(transaction.price)} ETH (per unit of measure){" "}
+                {formatUnits(transaction.price)} APE (per unit of measure){" "}
               </p>
               <p className="flex justify-between my-4">
                 Quantity available: <span>{Number(transaction.weight)}</span>
@@ -62,8 +62,8 @@ const MarketplaceDetails = () => {
                 Seller's wallet address:{" "}
                 <span>{truncateAddress(transaction.address)}</span>
               </p>
-              {transaction.address.toLowerCase() === address?.toLowerCase() && <EditProduct id={id} />}
-              {transaction.address.toLowerCase() !== address?.toLowerCase() && (
+              {transaction.address.toLowerCase() === address.toLowerCase() && <EditProduct id={id} />}
+              {transaction.address.toLowerCase() !== address.toLowerCase() && (
                 <BuyProduct id={id} price={formatUnits(transaction.price)} />
               )}
               <p>

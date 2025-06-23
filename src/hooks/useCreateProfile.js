@@ -30,7 +30,7 @@ const useCreateProfile = () => {
       }
 
       if (Number(chainId) !== Number(curtis.id)) {
-        toast.error("You're not connected to Base Sepolia");
+        toast.error("You're not connected to Curtis Network");
         return;
       }
 

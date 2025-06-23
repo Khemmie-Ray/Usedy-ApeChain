@@ -1,11 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import useSignerOrProvider from "./useSignerOrProvider";
+import { readOnlyProvider } from "../constants/readOnlyProvider";
 import { ethers, Contract } from "ethers";
 import abi from '../constants/abi.json'
 
 const useGetProduct = () => {
     const [product, setProduct] = useState([]);
-    const { readOnlyProvider} = useSignerOrProvider()
 
     const convertIpfsUrl = (url) => {
         if (url.startsWith("ipfs://")) {

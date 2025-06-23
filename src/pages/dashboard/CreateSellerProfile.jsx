@@ -79,9 +79,9 @@ const CreateSellerProfile = () => {
             </p>
             <p className="flex justify-between my-4 font-bold">
               Payment Total:{" "}
-              <span>{formatUnits(info.payment)} ETH</span>
+              <span>{formatUnits(info.payment)} APE</span>
             </p>
-            {info.address === address && <EditProfile id={Number(info.id)} />}
+            {info.address.toLowerCase() === address.toLowerCase() && <EditProfile id={Number(info.id)} />}
           </div>
         ))}
       </div>
