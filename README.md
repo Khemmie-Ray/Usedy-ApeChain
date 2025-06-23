@@ -121,7 +121,7 @@ Together, we can build a greener, more eco-conscious world.
 
 ## 🌐 Live Demo
 
-- Frontend deployed on Vercel: [https://usedy-code-africa.vercel.app/](https://usedy-code-africa.vercel.app/)
+- Frontend deployed on Vercel: [https://usedy-ape-chain.vercel.app/](https://usedy-ape-chain.vercel.app/)
 
 ---
 
