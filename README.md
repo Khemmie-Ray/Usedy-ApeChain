@@ -127,6 +127,10 @@ Together, we can build a greener, more eco-conscious world.
 
 ## 🎤 Pitch Deck
 
-- Canva Pitch: [View Pitch]()
+- Canva Pitch: [View Pitch](https://www.canva.com/design/DAGrWmD8lEA/18jltEzaYUiiA3qLnBrxYA/view?utm_content=DAGrWmD8lEA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62ef2a5819)
 
 ---
+
+## Demo Video
+
+- Youtube Link: [https://youtu.be/3f7_pFRQAN4](https://youtu.be/3f7_pFRQAN4)
